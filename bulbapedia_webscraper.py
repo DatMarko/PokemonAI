@@ -26,6 +26,7 @@ poke_names = []
 page = response.text
 soup = BeautifulSoup(page.content, 'html.parser')
 
+#looks at page and adds all divs that have tables and are aligned at center to a list called all_matches
 all_matches = soup.find_all('table', attrs={'align':['center']})
             
 #gets all pokemon names and adds it to poke_names list
