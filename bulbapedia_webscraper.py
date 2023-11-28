@@ -29,6 +29,7 @@ soup = BeautifulSoup(page.content, 'html.parser')
 #looks at page and adds all divs that have tables and are aligned at center to a list called all_matches
 all_matches = soup.find_all('table', attrs={'align':['center']})
             
+#looks at every item in all_matches and            
 #gets all pokemon names and adds it to poke_names list
 for i in all_matches:
     list = ([a.attrs.get('href') for a in soup.select('table[align="center"] td a[title*="Pok"]')])
