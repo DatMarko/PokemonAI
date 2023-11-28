@@ -1,2 +1,7 @@
-Finally finished getting the beta version of the excel sheet
+- I can create a tab for every pokemon. 
+- For every tab, it'll have a table with a list of all the moves that pokemon can learn.
+- To create each table, let's go through the pokemon_moves table and for each pokemon,
+  only add one unique move into our new table. The pokemon_moves table repeats moves
+  many many many times and i only want one of every move.
+- Direction: use openpyxel to go through each pokemon and list each unique move in a list.
 
