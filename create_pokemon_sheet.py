@@ -1,10 +1,12 @@
 import openpyxl
 from openpyxl import load_workbook
-import xlrd
 
 
 
 
-path = 'Pokemon_Dex - Copy.xlsx'
-wb = xlrd.open_workbook(path)
-book = openpyxl.Workbook()
+
+path = 'sheets/pokemon_moves.xlsx'
+print("hello world")
+ref_workbook= openpyxl.load_workbook(path)
+
+ref_workbook.close()

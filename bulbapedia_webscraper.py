@@ -47,9 +47,11 @@ k = 0
 
 print(poke_names)
 print(len(poke_names))
+
 path = 'Pokemon_Dex - Copy.xlsx'
 wb = xlrd.open_workbook(path)
 book = openpyxl.Workbook()
+
 for x in poke_names:
     new_url = url + "wiki/" + x + "_(Pokémon)"
     #print(x)
